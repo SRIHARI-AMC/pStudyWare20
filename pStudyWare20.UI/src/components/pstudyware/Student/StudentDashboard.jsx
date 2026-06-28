@@ -309,19 +309,15 @@ const StudentDashboard = () => {
       <Container maxWidth="xl" sx={{ mb: 4 }}>
         <Grid container spacing={2}>
           <Grid item xs={12} sx={{ pb: "0 !important" }}>
-            <Card sx={panelCardSx}>
-              <CardContent sx={panelContentSx}>
-                <DashboardMessages
-                  username={username}
-                  chapterId={chapterId}
-                  dashboardMessages={dashboardMessages}
-                  loading={dashboardMessagesLoading}
-                />
-              </CardContent>
-            </Card>
+            <DashboardMessages
+              username={username}
+              chapterId={chapterId}
+              dashboardMessages={dashboardMessages}
+              loading={dashboardMessagesLoading}
+            />
           </Grid>
 
-          <Grid item xs={12} sx={{ pt: "0 !important" }}>
+          <Grid item xs={12} sx={{ pt: "0 !important", mt: "-24px !important" }}>
             <StudentMeetingSchedule username={username} panelCardSx={panelCardSx} />
           </Grid>
 
